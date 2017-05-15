@@ -1,0 +1,59 @@
+<!doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - Selector2 </title> 
+        <meta.descritpion = "Formulaire Java script">
+        <link rel="stylesheet" href="table.css">
+
+        
+    </head>
+
+    <body> 
+        <header>
+        
+            <h1> TEST </h1>
+
+        </header>
+     
+                <div>
+                </div>
+                 <div>
+                </div>
+                
+                
+     <section>
+           
+                <input type="button"  values="magie" id='inpAction'>
+
+                <script>
+                function change(){
+                    var tabDiv = document.querrySelectorALL('div').forEach(function(element){
+                        if(element.className=='red')
+                        element.className='';
+                        else 
+                            element.className='red';
+                    });
+                }
+                
+                function addElement(id, type){
+                    document.createElement('input');
+                    element.setAttribute('type',type);
+                    element.id = id;
+                    document.querySelector('body').appendChild(element); //recupere moi lelement body et rajouter a la fin un element, appendChild sert a rajouter a la fin
+
+                }//va creer un element
+
+                (function(){
+                    var input= document.querrySelector('#inpAction'); 
+                    input.addEventListener('click',function(){
+                        change();
+                    });
+
+                change();
+
+    </body>
+
+</html>
+
+

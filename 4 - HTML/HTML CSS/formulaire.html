@@ -1,0 +1,59 @@
+<!doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - formulaire </title> 
+        <meta.descritpion = "Formulaire Java script">
+        <link rel="stylesheet" href="formulaire.css">
+    </head>
+
+    <body> 
+        <header>
+        
+            <h1> Formulaire </h1>
+
+        </header>
+      <div class="conteneur">
+            <form action="#" method="post" name="formulaire">
+
+             <p>   <label for="name"> Entrez votre nom :</label> 
+                <input type="text" id ="nom"  name="nom"> 
+                </p>
+
+
+              <p>   <label for="prenom"> Entrez votre prenom :</label> 
+                <input type="text" id ="prenom"  name="prenom" > 
+           
+                </p>
+
+                <p>   <label for="ville"> Entrez votre ville :</label> 
+                <input type="text" id ="ville"  name="ville" > 
+                </p>
+                
+                <div>
+                   <input id ='BTM' type="button" value="valider" >
+                </div>
+
+  <!--            <p>   <label for="date"> Entrez votre date de naissance :</label> 
+                <input type="date" id ="date"  name="date" > </p>
+
+             <p>    <label for="color"> Entrez votre couleur préférée : </label> 
+                <input type="color" id ="color"  name="color" > </p>
+ -->
+</div>
+
+        
+        <script> 
+       
+            function jeClique() {
+            alert('Bonjour');
+            }
+            
+            var composant=document.querySelector('#BTM');
+            composant.addEventListener('click', jeClique, 'true');
+
+        </script>       
+
+    </body>
+
+</html>

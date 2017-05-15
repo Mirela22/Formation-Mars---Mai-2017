@@ -1,0 +1,54 @@
+<doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - formulaire </title> 
+        <meta.descritpion = "Formulaire Java script">
+        <link rel="stylesheet" href="formulaire.css">
+    </head>
+
+    <body> 
+        <header>
+        
+            <h1> Formulaire </h1>
+
+        </header>
+      <div class="conteneur">
+            <form >
+
+             <p> <input type="text" id ="inpName" value ="votre nom" > 
+                </p>
+
+
+              <p> <input type="text" id ="inpPrenom" value="votre prenom"> 
+                </p>
+                <input id ='BTM' type="button" value='valider' >
+
+            </form>
+                <div id="divResult" style="width: 100%; height: 5em; border: 1px solid black" >
+                </div>
+        
+        <script> 
+        document.querySelector('#BTM').addEventListener('click', function (){
+            
+             var name2=document.querySelector('#inpName').value;
+             var prenom2=document.querySelector('#inpPrenom').value;
+
+            document.querySelector('#divResult').innerHTML= 'Bonjour ' + name2 + ' ' + prenom2;
+            
+        }, true);
+
+      /*  document.querySelector('action').addEventListener('click', function(event){
+            alert(event.target.value); //event est un objet qui va exposer plusieurs propriété plusieurs méthodes qui vont aider ... il y a tj un objet target qui va représenter l'objet en cause de l'evenement
+        },true);
+        document.querySelector('action').addEventListener('mouseover', function(event){
+            document.querySelector('#divResult').innerHTML("X: "+event.clientX + "Y ;" + event.clientY);
+        },true);
+
+/*
+
+        </script>       
+
+    </body>
+
+</html>

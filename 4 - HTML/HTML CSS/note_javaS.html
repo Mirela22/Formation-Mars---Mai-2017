@@ -1,0 +1,133 @@
+/*Les formulaires 
+
+est un composante HTML noté <form  action="/_adresse.php"       method="POST "
+                                                                        GET
+
+        les éléments toujours présents dans le formulaire : 
+
+        <input type="submit" while="">  va crer un bouton [envoyer]
+
+        <input type="text" id =" "  name="__" > // va nous donner unchamp ou l'on pourra inscrire des informations // le champ name ne doit exister que dans le formulaire
+
+        l'element label : 
+
+        <label for="inputname"> nom </label> on le met devant <input type="text" id =" "  name="__" > // il permet d'afficher nom devant  le formulaire: 
+
+        input checkbox
+
+        radiobox  <label for="inputname"> h </label><input type="radio" name="__" id="......" >
+                    <label for="inputname"> f </label><input type="radio" name="__" id="......" >
+                                                <input type="password" id =" "  name="__" > //ce qu'on entre ne s'affiche pas
+                                                 <input type="email" id =" "  name="__" > //empeche d'enrengistrer si l'email n'est pas bien formé
+
+        !!! dans un formulaire utilisé que des intput : deux types : 
+        les boutons : ca n'envoie rien, en general ca actionne une action javascript
+        ou les submit : ça envoie 
+
+        le bouton reset 
+        champ time 
+        champ url 
+        champ tel$
+
+
+        creer un formulaire simple qui permet de rentrer le nom, le prenom et la date de naissance, et la couleur préférée
+
+
+        Creer  un tableau : 
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th> nom </th> <th ......>
+                </tr>
+            </thead>
+
+            <body>
+            </body> //très important dans un tableaux.
+
+            <foot>
+            </foot>
+
+        </table>
+
+<tr> = ligne 
+<th> colonne d'entete
+</th>
+    colspan
+    rowspan
+
+
+    API
+    DOM = hierarchie de la page; 
+
+    l'aplli dom permet de 
+
+    chaque composant de la page est rattaché au document (dans la partie window). 
+    il faudra bcp travailler avec l'élement document.
+
+    la manipulation des objets;
+    toujours éviter d'écrire des variables en dehors d'un bloc d'instruction.
+
+    comment faire une IEF (imediat executive function / des qu'on la lit on l'execture, on ne peut pas l'appeler') : 
+
+    (function()){
+
+        gjdgjkfg
+    }/(); // tout ce qui est dedans est completement isolé du reste du code
+
+    les fonctions anomique : 
+
+    maVariable = fonction();
+    fonction nom(){
+
+    }; = equivalent d'un pointeur de fonction en C
+
+
+    on a un input avec un id='inpName'
+
+    on va creer un objet: 
+
+    var objet= document.getElementById('inpName');
+        on recupere un seul element car ID est unique. on peut recuperer en revanche dautres element comme un tableau: 
+     var objet= document.getElementBytable('div');
+
+     byclass ...... 
+
+    si on veut recuperer un div : 
+
+    on recupere HTML DIVEmlement
+
+
+    on a de nouvelles methode : 
+
+    LES SELECTORS 
+
+    document.querrySelector('un element') ==== on recupere un element
+    document.querrySelector('#div') ==== on recupere toute les id
+    document.querrySelector('div') ==== on recupere toute les id.
+
+
+    element parent : NODE     (il existe un cinquieme element text, il faut eviter decrire du texte en dehors des balises)
+    puis : element
+    puis : HTML element
+    puis : HTML DIVElement
+
+var obj = querrySelector 
+setAttribute('class','rouge');
+getAttribute('class');
+
+<div class='rouge' > </div>
+
+exo : 
+faire des div vide en forme de 10px, faire des classe rouge (css), appliqué une clase 'rouge' grace à javascript
+
+
+/*tab forteach(function(element){
+    element
+}); // fonction call back
+*/
+
+
+Exo: 
+on a la console : (balasko, josianne 76, punum 3e age,"photo.jpg"); il faut que sur la page s'affiche '

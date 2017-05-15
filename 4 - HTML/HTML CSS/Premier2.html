@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - Nombre premier </title> 
+        <meta.descritpion = "Java script">
+    </head>
+
+    <body> 
+
+        <script>
+
+        var nombre  = prompt('veuillez entrer un nombre');
+		var a=0;
+			
+			if (nombre == 2 || nombre ==1 ) {
+				a=1;
+			}
+			else if ( nombre%2 == 0 ) {
+						a=2;
+			}
+			else {
+				for (var i=nombre; i>0; i=i-2 ) {
+					if ( nombre%i == 0 ) {
+						a=a+1;
+					}
+					else {
+						continue ;
+					}
+				}
+			}
+				
+			if (a == 1 ) {
+				alert("C'est un nombre premier");
+			}
+			else {
+			 	alert("Ce n'est pas un nombre premier"); 
+			}
+			
+
+        </script>
+
+
+    </body>
+
+</html>

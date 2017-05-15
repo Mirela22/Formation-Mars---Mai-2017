@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>      
+      <meta charset="UTF-8">      
+      <meta description ="je suis une page d'exemple">    
+      <title> moosover</title>      
+     
+      <style>
+          .specDiv{
+              position: absolute;
+              width:10px;
+              height:10px;
+              border:1px solid black;
+          }
+
+                    .carre{
+              position: absolute;
+              width:10px;
+              height:10px;
+              border:1px solid black;
+              z-index: 
+          }
+     
+     
+      </style>
+  </head>
+  <body style="width:100%;height:50em;border:1px solid black;">
+
+
+
+  <script >
+
+      var body= document.querySelector('body');
+      body.isClick=false;
+      body.class='carre';
+ 
+      document.querySelector('#change').addEventListener('click', function(event) {
+          var body= document.querySelector('body');
+          body.class = (document.querySelector('body').class=='rouge') ? 'carre' : 'rouge';
+      },true);
+ 
+
+
+  </script >
+</body>
+</html>

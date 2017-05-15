@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>      
+      <meta charset="UTF-8">      
+      <meta description ="je suis une page d'exemple">    
+      <title> moosover</title>      
+     
+      <style>
+          .specDiv{
+              position: absolute;
+              width:10px;
+              height:10px;
+              border:1px solid black;
+          }
+     
+     
+      </style>
+  </head>
+  <body style="width:100%;height:50em;border:1px solid black;">
+
+
+
+  <script >
+ 
+      document.querySelector('body').addEventListener('mousemove', function(e) {
+ 
+
+      var eCircle= document.createElement('div');  
+      eCircle.className = 'specDiv';
+      eCircle.setAttribute('style','left:'+e.clientX+'px;top:'+e.clientY+'px;');
+      document.querySelector('body').appendChild(eCircle);
+     
+     
+      },true);
+  </script >
+</body>
+</html>

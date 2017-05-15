@@ -1,0 +1,45 @@
+div[carre]{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+}
+
+div[conteneur]{
+    display:flex;
+    flex-direction: row;
+    width: 1000px; 
+    flex-wrap: wrap;
+
+    background-color: cadetblue;
+
+    justify-content: space-between;
+}
+
+div[carre]:hover{
+    background-color: red;
+}
+
+a{
+    color: pink;
+}
+a:visited{
+    color: green;
+}
+div[carre]::before{
+    content:"apres";
+    color: red;
+}
+div[carre]::after{
+    content:"apres";
+    color:brown;
+}
+
+ul li:hover::after{
+    content:"<--";
+}
+ul li:hover::before{
+    content:"-->";
+}
+ul li:hover{
+    color: deeppink; 
+}

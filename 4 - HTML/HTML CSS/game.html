@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+   <head>
+   <!-- Partie head -->
+   <meta charset="UTF-8">
+   <meta description="jeux">
+   <title> Jeu </title>
+    <link rel="stylesheet" href="./css/jeux.css">
+    <script>
+       (function(){
+           var ligne=0;
+           var colonne=0;
+       })();  
+           function creationTab(taille1,taille2){
+               var body=document.querySelector('body');
+               var tableau= document.createElement('table');
+               body.appendChild(tableau);
+               for(var i=0;i<taille1;i++){  
+                   elem= "elem"+i;
+                   var element =  document.querySelector('table').appendChild(document.createElement('tr'));
+                   element.setAttribute('id',elem);
+                    for(var j=0;j<taille2;j++){
+                      var  colonneId = "case"+j;  
+                       var column= document.querySelector('#'+elem).appendChild(document.createElement('td'));
+                       column.setAttribute('id',colonneId +""+i);
+                    }
+               }
+           }
+           function genererCercle(idligne,idColonne){
+               idligne--;
+               idColonne--;
+               ligne=idligne;
+               colonne=idColonne;
+               var columnn= document.querySelector('#case'+idColonne+""+idligne);
+               columnn.setAttribute('class','blue');
+               var cercle= document.createElement('div');
+               cercle.setAttribute('id','noir');
+               columnn.appendChild(cercle);
+               return cercle;
+           }
+          var body=document.querySelector('body');
+         var cercle=document.querySelector('#noir');
+         var tableau=document.querySelector('table');
+         document.addEventListener('keydown',function(event){
+              if(event.keyCode==40){
+               ligne++;
+               document.querySelector('#case'+colonne+""+ligne).appendChild(document.querySelector('#noir'));
+               document.querySelector('#case'+colonne+""+ligne).setAttribute('class','blue');
+               }else if(event.keyCode==38){
+               ligne--;
+               document.querySelector('#case'+colonne+""+ligne).appendChild(document.querySelector('#noir'));
+                document.querySelector('#case'+colonne+""+ligne).setAttribute('class','blue');
+               }else if(event.keyCode==37){
+               colonne--;
+               document.querySelector('#case'+colonne+""+ligne).appendChild(document.querySelector('#noir'));
+                document.querySelector('#case'+colonne+""+ligne).setAttribute('class','blue');
+               }else if(event.keyCode==39){
+               colonne++;
+               document.querySelector('#case'+colonne+""+ligne).appendChild(document.querySelector('#noir'));
+                document.querySelector('#case'+colonne+""+ligne).setAttribute('class','blue');
+               }
+          },false);
+
+      </script>
+   </head>
+
+   <body>
+
+     
+   </body>
+</html>

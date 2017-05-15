@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>      
+      <meta charset="UTF-8">      
+      <meta description ="Jeux">    
+        <title> jeux</title>      
+     
+            <style>
+
+            td, tr{
+                    border: 1px solid black; 
+                    margin: 10px;
+                    padding: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;  
+    
+                }
+            div{
+                border: 1px solid red;
+                width: 5px;
+                height: 5px;
+                background-color: red;
+            }
+            
+            </style>
+  </head>
+  <body>
+
+    <script >
+
+        
+
+        function tableau(nbre_colonne, nbre_ligne){
+
+            var tableau = document.createElement('tableau');
+            tableau.id='tableau';
+            var body = document.querySelector('body');
+            body.appendChild(tableau);
+
+            var x=0, y=0;
+
+                 for (var i=0;i<nbre_colonne;i++){
+                    var tr = document.createElement('tr');
+                    tableau.appendChild(tr);
+                    x=x+1; 
+                      
+
+                      for(var j=0;j<nbre_ligne;j++){
+                        var td = document.createElement('td');
+                        tableau.appendChild(td);
+                        y=y+1;
+                        } 
+                 }
+        
+
+       var pion=document.createElement('div');
+       tableau.setAttribute('style',  pion);
+       
+        
+
+
+
+
+       }
+
+
+// selectinner quelle touche appuyer : keycode switch case ?
+     </script >
+
+    </body>
+</html>
+
+

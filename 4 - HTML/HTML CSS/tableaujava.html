@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - Nombre premier </title> 
+        <meta.descritpion = "Java script">
+    </head>
+
+    <body> 
+
+        <script>
+
+            var myArray = ['','',''];
+            var myArray = new array('','','');
+            //les tableaux sont des listes chainés en réalités, on peut mettre n'importe quelle valeur sans la déclarer
+            //JAVA SCRIPT = dynamique, TOUT EST OBJET EN JAVA SCRIPT
+            /* dans les autres langages: 
+                int[4] maTab; un tabelau est composé de variable alignée les unes à côté des autres pour la rapidité de lecture
+                le tableau n'est pas dimensionnable il est fixe car : ghhjfgh int int int int kfjglfjgf 
+                (il y aqqch dans la mémoire autour des int)
+                autre méthode : 
+                les listes : 
+                un tableau est une variable qui pointe sur une adresse ou l'on a x éléments (liste d'élements). la seule adresse que l'on a est le premier élement de la liste. 
+                une liste est un pointeur de pointeur : on parle de liste chainé. chaque élements a une adresse
+
+                on a aussi la liste double chainé ou on a l'adresse du suivant et celle du précédent.
+
+                les chaines de caracteres sont des tableaux dans les langages.
+
+                on evite de modifier une chaine de caracteres, car elles sont non mutables. car il faut creer une nouvelle table, le processus de construction et de destruction 
+                est un processus consommateur. c'est pourquoi on utilise des String Bulder qui sont des listes chainés.
+
+                push: pour inserer un element a la fin du tableau 
+                sift: retire le premier éleement du tabelau 
+                pop : retire un element a la fin */
+
+                var str = "aaaa, zzzz, eeeee";
+                var newTab = str.split(','); //split va mettre chaque caractere entre les virgules dans une case
+                str = newTab.join(','); //join va faire l'effet inverse de split
+                newTab.length
+
+                /* exo : 
+                un petit pallet ne peut se trouver sous un grand pallet, 
+                sens trigonométrique à droite : on va chercher toutes les options vers la droite, plus a droite moins adroite moins a gauche plus a droite moin a droite.
+                */
+
+                var monObj = {
+                    nom:'Minet',
+                    prenom:'Bernard',//apres chaque instanciationn il y a une virgule
+                    parler: function(){
+                        return 'helo';
+                    }
+                }; // les objets sont deja instancié
+
+                //nom[].parler(); //synthaxe a verifier
+                //this représente l'objet courant
+
+                function Personnage(nom,prenom){
+                        self = this; //il faut utiliser self à l'interieur des fonctions dans nos constructeurs pour utiliser la bonne variable
+                        this.nom    =nom;
+                        this.prenom =prenom;
+                
+                      /*  this.maFonction=function(){
+                            return "hello"+self.nom;
+
+                        }; //pointeur de fonction*/
+
+        
+                }
+                // on peut enlever var devant une variable mais pas conseillé car dans ce cas la la variable apparetient a window et tout le monde peut la changer.
+
+                Personnage.prototype.sayHello = function(){
+                    return "hello"+self.nom;
+                }//prototype signifie qu'on va ajouter une nouvelle methode a la fonction, ou encore une noubelle variable
+
+                var bernard= new Personnage('Minet','Bernard');
+                console.log(bernard.nom);
+
+                /*Objest est la parent de tout, java est coté client mais aussi coté serveur, coté client il y a le dome qui permet d'intervenir avec notre page html, 
+ 
+ 
+        </script>
+
+
+    </body>
+
+</html>

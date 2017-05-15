@@ -1,0 +1,54 @@
+<!doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - TP Selecteurs </title> 
+        <meta.descritpion = "TP selecteurs Java script">
+        <link rel="stylesheet" href="table.css">
+    </head>
+
+    <body> 
+        <header>
+            <h1> TEST </h1>
+        </header>
+             <section>                       
+
+                <script>
+                
+                           
+                function creer(nom, prenom, age, presentation, photo){
+                     
+                    var eNom = document.createElement('div');
+                    var ePrenom = document.createElement('div');
+                    var eAge = document.createElement('div');
+                    var ePresentation = document.createElement('div');
+                    var ePhoto = document.createElement('img');
+
+                   eNom.innerHTML = nom ;
+                   ePrenom.innerHTML = prenom ;
+                   eAge.innerHTML = age ;
+                   ePresentation.innerHTML = presentation;
+                   ePhoto.setAttribute('src', photo);
+
+                    eNom.className ='nom';
+                    ePrenom.className ='prenom';
+                    eAge.className ='age';
+                    ePresentation.className ='presentation';
+                    ePhoto.className ='photo';
+
+                    document.querySelector('section').appendChild(eNom); //recupere moi lelement section et rajouter a la fin un element, appendChild sert a rajouter a la fin
+                    document.querySelector('section').appendChild(ePrenom);
+                    document.querySelector('section').appendChild(eAge);
+                    document.querySelector('section').appendChild(ePresentation);
+                    document.querySelector('section').appendChild(ePhoto);
+                }//va creer un element
+
+
+                </script>
+
+            </section>
+    </body>
+
+</html>
+
+

@@ -1,0 +1,41 @@
+<!doctype html>
+<html> 
+    <head> 
+        <meta Charset = "UTF-8">
+        <title>  Java Script - Nombre premier </title> 
+        <meta.descritpion = "Java script">
+    </head>
+
+    <body> 
+
+        <script>
+
+               var elem = prompt('valeur');
+           var depl = Math.pow(2,elem)-1;
+           alert (depl);
+
+           var A = 'A';
+           var B = 'B';
+           var C = 'C';
+
+           
+               myHanoi(elem,A,B,C)
+           
+           
+           function myHanoi (elem,A,B,C){
+               if (elem==1){
+                   console.log('deplacer de',A,'vers',C);
+               }else{
+                   myHanoi(elem-1,A,C,B);
+                   console.log('deplacer de',A,'vers',C);
+                   myHanoi(elem-1,B,A,C);
+               }
+           }
+
+
+        </script>
+
+
+    </body>
+
+</html>
