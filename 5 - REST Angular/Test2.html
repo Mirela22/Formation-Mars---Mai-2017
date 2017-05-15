@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+  <head>
+      <!-- partie commentaire pour le client (description) -->
+      <meta charset="UTF-8">
+      <meta description ="je suis une page d'exemple">
+      <title> REST </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  </head>
+  <body ng-app="ModuleAngular">
+
+      <div ng-controller="FirstCtrl">
+          <strong>Bonjour {{hello.nom}}  {{hello.prenom}} </strong>
+
+          {{::hello.nom}}
+        
+          Bonjour <strong ng-bind="hello.nom"></strong> 
+
+          <input type="text" ng-model="hello.nom">
+          <input type="button" ng-click="action" value = "click">
+      </div>
+
+      <div ng-controller="SecondCtrl">
+
+      </div>
+
+
+
+      <script>
+          /* Création d'un module */
+          var mod = angular.module("ModuleAngular",[]);
+          /* Création d'un controller */
+          mod.controller("FirstCtrl",function($scope){/*fonction qui gère le controller*/
+              $scope.hello = {
+                  nom: 'Smajovic',
+                  prenom: 'Mirela'
+              }
+          });
+
+          $scope.action = function(){
+              alert('bonjour')
+          };
+
+          mod.controller("SecondCtrl",function(){
+
+          });
+     
+      </script>
+
+  </body>
+</html>

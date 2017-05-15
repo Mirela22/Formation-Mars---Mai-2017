@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+  <head>
+      <!-- partie commentaire pour le client (description) -->
+      <meta charset="UTF-8">
+      <meta description ="je suis une page d'exemple">
+      <title> REST </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  </head>
+  <body ng-app="ModuleAngular">
+
+      <div ng-controller="FirstCtrl">
+          <strong>{{hello}} </strong>
+
+          
+          <strong ng-bind="hello">
+            </strong>
+      </div>
+
+      <div ng-controller="SecondCtrl">
+
+      </div>
+
+
+
+      <script>
+          /* Création d'un module */
+          var mod = angular.module("ModuleAngular",[]);
+          /* Création d'un controller */
+          mod.controller("FirstCtrl",function($scope){/*fonction qui gère le controller*/
+              $scope.hello = "hello, the world"
+          });
+
+          mod.controller("SecondCtrl",function(){
+
+          });
+     
+      </script>
+
+  </body>
+</html>
