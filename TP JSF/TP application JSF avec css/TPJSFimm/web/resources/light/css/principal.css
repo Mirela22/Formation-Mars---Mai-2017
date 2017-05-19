@@ -1,0 +1,275 @@
+/* light */
+
+
+body{
+   
+    background-image:url(../../resources/images/c.JPG);
+    background-repeat:no-repeat;
+   background-size: cover;
+    
+  
+    color: #333;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-shadow: 0 1px 0 lightgrey;
+}
+
+header{
+    text-align: center;
+    border-style: solid;
+    border-color: lightblue lightpink lightyellow lightgreen;
+    background-color:  #eee;
+    background-image:url(../../resources/images/cloud.gif);
+    
+    background-size: cover;
+    height:200px; 
+    
+}
+
+
+.header{
+        padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #1e1e1e;
+
+    font-family: 'Gabriela', serif;
+    font-size: 100px;
+    letter-spacing: .10em;
+    text-align: center;
+    
+
+}
+
+
+h2{
+    color:white;
+    text-align: center;
+}
+
+h1 {
+    color:black;
+    text-align: center;
+}
+.presentation{
+    font-size: 18px;
+    text-shadow: 0 1px 0 lightgrey;
+}
+.presentation2{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+      
+
+.profil {
+ 
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  
+}
+.profil1 {
+ 
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  
+    
+}
+
+.fieldest2{
+   text-align: center;
+   font-size: 12pt;
+   width:415px;
+   height:200px; 
+}
+
+
+.personne{
+   display:flex;
+   flex-direction: row;
+  
+   padding : 10px;
+   margin-top:20px;
+   margin-left: auto;
+   margin-right: auto;
+  
+   justify-content:center;
+  
+   
+}
+.principal{
+   
+    width : 535px;
+    display:flex;
+    flex-direction: row;
+    background: #f7f7f7;
+    background: -moz-linear-gradient(90deg, #ccc, #fff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #aaa;
+    margin: 20px auto 0;
+    padding: 20px;
+    
+}
+.carreDroite{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   text-align: center;
+   font-size: 12pt;
+   width:100px;
+   height:120px;
+}
+
+.carreCentral{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   text-align: center;
+   font-size: 12pt;
+   width:250px;
+   height:120px;
+   padding-left : 5px;
+   padding-right : 5px;
+   
+   
+}
+.fieldest1{
+   text-align: center;
+   font-size: 12pt;
+   width:215px;
+   height:120px; 
+   background-color : #F5F5F5   
+}
+.carreGauche{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   line-height:130%;
+   text-align: center;
+   font-size: 15pt;
+   width:150px;
+   height:120px;
+}
+.poubelle{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   text-align: center;
+   width:30px;
+   height:120px;
+   margin-left : 10px;
+}
+.basPage {
+   display:flex;
+   flex-direction: row;
+  justify-content:center;
+}
+
+.bouton {
+    padding : 1em;
+}
+
+/* formulaire */
+.titreFormulaire{
+    display: block;
+    font-size:  25px;;
+    font-weight: bold;
+    text-shadow: 0 1px 0 lightgrey;
+}
+
+.labelname {
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 5px;
+    width: 120px;
+    
+}
+
+#name, #firstName, #description{
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 5px;
+    width: 120px;
+}
+
+.boutonFormulaire{
+    background: #ddd;
+    background: -moz-linear-gradient(90deg, #0459b7, #08adff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#08adff), to(#0459b7));
+    border: 1px solid #093c75;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-box-shadow: 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 120px;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #333;
+    text-transform: uppercase;
+}
+
+.boutonProfil{
+    background: #ddd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#08adff), to(#0459b7));
+    border: 1px solid #093c75;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #333;
+    text-transform: uppercase;
+    padding : 10px;
+    
+}
+
+.start{
+    background: #f7f7f7;
+    background: -moz-linear-gradient(90deg, #ccc, #fff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #aaa;
+    margin: 60px auto 0;
+    padding: 20px;
+    width: 440px;
+
+}
+
+.profil3{
+    background: #f7f7f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #aaa;
+    margin: 25px auto 0;
+    padding: 10px;
+    width: 440px;
+    font-size: 16px;
+
+}

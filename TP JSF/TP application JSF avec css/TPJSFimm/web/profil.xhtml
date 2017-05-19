@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Profile</title>
+        <h:outputStylesheet library="#{profileBean.theme}" name="css/principal.css"/>
+    </h:head>
+    <h:body>        
+        
+        <c:if test="#{profileBean.header=='yes'}">
+        <header>
+            <ui:insert name="header"/>
+                <ui:include src="template/header.xhtml"></ui:include>
+        </header>
+        </c:if>
+               
+        <h:form class = "start">
+       <fieldset class="fieldest2" >
+       <legend class="titreFormulaire">Modifier le profil</legend>
+       
+            <br/>
+               <label class="profil1">Choisissez votre thème: </label> <br/>
+                        <h:selectOneRadio  class="profil" required="true" value="#{profileBean.theme}">
+               <f:selectItem class="profil" itemValue="dark" itemLabel="dark" />
+               <f:selectItem class="profil" itemValue="light" itemLabel="light" />
+               <f:selectItem class="profil" itemValue="defaut" itemLabel="defaut" />
+                        </h:selectOneRadio>
+               <br/>
+              <label class="profil1" >Voulez vous un en-tête ?</label> <br/>
+                        <h:selectOneRadio class="profil" required="true" value="#{profileBean.header}">
+               <f:selectItem class="profil"  itemValue="yes" itemLabel="yes" />
+               <f:selectItem class="profil" itemValue="no" itemLabel="no" />
+                        </h:selectOneRadio>
+              <br/>
+                        <h:commandButton class="boutonProfil" type="submit" value = "enregistrer le profil" action="index"/>                                            
+                <br/>     
+        </fieldset>
+       </h:form>
+        
+       <div class="profil3"> Le thème que vous avez choisi est: #{profileBean.theme} </div>
+        <div class="profil3" >Affichage de l'entête ? #{profileBean.header} </div>
+        <br/>  <br/>  
+        <h:form>
+          <h:commandButton class="boutonProfil" action = "index" value = "Page d'accueil" />
+           </h:form>
+        <br/>  <br/>  
+    </h:body>
+</html>

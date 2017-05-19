@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.PremierTp.Math.Mathematique"/>
+<fullyQualifiedTypeName name="com.wow.personnage.Personnage"/>
+<fullyQualifiedTypeName name="com.wow.race.Humain"/>
+<fullyQualifiedTypeName name="com.wow.race.Orc"/>
+<fullyQualifiedTypeName name="com.wow.personnage.iInterface"/>
+<fullyQualifiedTypeName name="com.wow.jeu.Dragon"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="Liste.Liste.Item"/>
+<fullyQualifiedTypeName name="Liste.Personnage"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.jeu2.RunImpl"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.jeu2.Personnage"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.io.EOFException"/>
+<fullyQualifiedTypeName name="com.ib.tpcalculatrice.TestException"/>
+</qualifiedTypeNameHistroy>

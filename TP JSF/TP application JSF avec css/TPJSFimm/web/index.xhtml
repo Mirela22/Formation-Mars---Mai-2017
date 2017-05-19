@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title> Accueil </title>
+        <h:outputStylesheet library="#{profileBean.theme}" name="css/principal.css"/>
+    </h:head>
+    <h:body>
+        <c:if test="#{profileBean.header=='yes'}">
+        <header>
+            <ui:insert name="header"/>
+                <ui:include src="template/header.xhtml"></ui:include>
+        </header>
+        </c:if>
+        
+   
+        
+        
+     
+        <!--
+        <div id="container">
+                <h:dataTable value="#{userImm.getPersonn()}" var="Personn" border="2">
+                        <h:column >
+                                <f:facet name="header"> ID</f:facet>
+                                    #{Personn.getID()}
+                         </h:column>
+                        <h:column >
+                                <f:facet name="header">Name</f:facet>
+                                 #{Personn.getName()}
+                         </h:column>
+                        <h:column >
+                                <f:facet name="header">First name</f:facet>
+                                #{Personn.getFirstName()}
+                        </h:column>
+                        <h:column >
+                                <f:facet name="header">Description</f:facet>
+                                #{Personn.getDescription()}
+                        </h:column>
+                        <h:column >
+                                <f:facet name="header">Supprimer</f:facet>
+                                    <h:form> 
+                                        <h:commandButton value="supprimer" action="#{fonctionBean.removePersonn(Personn.getID())}"/>
+                                    </h:form>
+
+               </h:column>
+
+                </h:dataTable>
+            
+        </div>
+        
+        -->
+
+        <ui:repeat var="user" value="#{userImm.getPersonn()}" varStatus="status">
+                   <div class="personne">
+                       <div class="principal">
+                           <div class="carreGauche">
+                               <p class="presentation"> Nom, prenom, id : </p>
+                               <div><h:outputText class="presentation2" value="#{user.getFirstName()}"></h:outputText></div>
+                               <div><h:outputText class="presentation2" value="#{user.getName()}"></h:outputText></div>
+                               <div><h:outputText class="presentation2" value="#{user.getID()}"></h:outputText></div>
+                           </div>                            
+                          <div class="carreCentral">
+                               <fieldset class="fieldest1">
+                                   <legend><strong>Description</strong></legend>
+                                   <h:outputText  value="#{user.getDescription()}"></h:outputText>
+                               </fieldset>
+                           </div>                            
+                          <div class="carreDroite">                
+                              
+                               <div class="poubelle">
+                                 <div>
+                                     <h:form>
+                                     <h:commandButton class="boutonProfil" value="supprimer" action="#{fonctionBean.removePersonn(user.getID())}"/>
+                                     </h:form>
+                                </div>
+                               </div>
+                           </div>
+                       </div>
+                  
+                  </div>
+               </ui:repeat>
+        
+        
+         <br/>
+             <br/>
+             
+             <div class="basPage">
+                <h:form> 
+                <h:commandButton class="boutonProfil" value="Ajouter une nouvelle personne" action="ajout"/>
+                <br/>
+                <br/>
+                <h:commandButton class="boutonProfil" value="Modifier le profil " action="profil"/>
+                </h:form>
+             </div>
+        <br/>
+        <br/>
+        
+        <img src="template/fleurs.gif" alt="Fleurs" />
+        
+    </h:body>
+</html>
+
