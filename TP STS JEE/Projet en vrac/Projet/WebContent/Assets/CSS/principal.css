@@ -1,0 +1,82 @@
+body{
+	
+	background: linear-gradient( #efd0a5, pink, orange);
+	
+}
+
+#conteneur {
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 260px; 
+    border: 2px solid black;
+    align-items: center;
+    
+}
+
+h1{
+	font-size: 70px;
+	letter-spacing: 3px;	
+	padding:20px;
+	color: white;
+    animation-name: titre;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+input{
+	 background-color: #fbe0fe;
+	 margin:5px;
+	 padding: 5px;
+	 font-size: 20px;
+	 box-shadow: 2px 2px;
+}
+input:hover {
+    background-color: #33A5FF;
+}
+h3{
+	
+	font-size: 50px;
+	letter-spacing: 3px;	
+	padding:5px;
+}
+
+
+
+#conteneur2{
+ 	height: 260px; 
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px; 
+}
+
+#new{
+    
+    border: 1px solid black;
+    align-items: center;
+    margin:15px;
+}
+
+h2{
+	border: 1px solid black;
+	background-color: white;
+}
+
+#valider{
+	animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    to {box-shadow:1px 1px 2px black,0 0 25px red, 0 0 5px green;}
+}
+@keyframes titre {
+    from {text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    to {text-shadow: 1px 1px 2px black,0 0 25px red, 0 0 5px green; }
+}

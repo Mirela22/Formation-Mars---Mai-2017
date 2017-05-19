@@ -1,0 +1,35 @@
+body{
+	background-color:  #ffffff;
+	font-family: 'Raleway', sans-serif;
+}
+
+h2{
+   color:#4d0000;
+}
+
+h3, p {
+	color: #4d0000;
+}
+
+#theme{
+	color: lightpink;
+	font-weight:bold;
+}
+
+fieldset {
+	background-color: #ffe6e6;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0 10px 10px 10px;
+  border:1px solid #4d0000;
+  width: 400px;
+ }
+legend {
+ color:#4d0000;
+ font-weight:bold
+ }
+
+
+
+
+  
