@@ -1,0 +1,9 @@
+body{
+    background-color: goldenrod;
+}
+
+header{
+    text-align: center;
+    border-style: solid;
+    border-color: red green blue yellow;
+}
